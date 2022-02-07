@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shelters</title>
+</head>
+<body>
+    <h1>{{ shelter.name }}</h1>
+    <table border="1px solid black">
+        <thead>
+            <tr>
+                <th>Shelter ID</th>
+                <th>Created at</th>
+                <th>Updated at</th>
+                <th>Has foster program</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{ shelter.id }}
+                </td>
+                <td>
+                    {{ shelter.created_at }}
+                </td>
+                <td>
+                    {{ shelter.updated_at }}
+                </td>
+                <td>
+                    {{ shelter.foster_program }}
+                </td>
+                <td>
+                    {{ shelter.city }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

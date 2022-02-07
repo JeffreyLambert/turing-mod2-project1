@@ -10,6 +10,9 @@ class Shelter(models.Model):
     city = models.CharField(max_length=50)
     name = models.CharField(max_length=255)
 
+    def __str__(self):
+        return self.name
+
 
 class Pet(models.Model):
     shelter = models.ForeignKey(Shelter, on_delete=models.CASCADE)
